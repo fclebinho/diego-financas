@@ -1,6 +1,10 @@
 <template>
   <div>
     Home
+
+    <br />
+
+    <nuxt-link to="/dashboard">Login</nuxt-link>
   </div>
 </template>
 

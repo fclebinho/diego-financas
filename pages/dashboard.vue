@@ -47,31 +47,31 @@
             Transações
           </h1>
 
-          <app-button>
+          <button class="button-primary">
             Nova transação
-          </app-button>
+          </button>
         </div>
 
         <div class="my-4 space-y-4 border-2 border-indigo-200 border-dashed bg-indigo-50 p-5 rounded-xl">
           <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-5">
             <div>
-              <app-form-label>Data da transação</app-form-label>
-              <app-form-input type="date" />
+              <label class="form-label">Data da transação</label>
+              <input class="form-input" type="date" />
             </div>
 
             <div>
-              <app-form-label>Valor</app-form-label>
-              <app-form-input />
+              <label class="form-label">Valor</label>
+              <input class="form-input" />
             </div>
 
             <div>
-              <app-form-label>Descrição</app-form-label>
-              <app-form-input />
+              <label class="form-label">Descrição</label>
+              <input class="form-input" />
             </div>
 
             <div>
-              <app-form-label>Categoria</app-form-label>
-              <app-form-select :options="[{ name: 'Licença de softwares', id: 1 }]" />
+              <label class="form-label">Categoria</label>
+              <form-select :options="[{ name: 'Licença de softwares', id: 1 }]" />
             </div>
           </div>
 
@@ -80,21 +80,21 @@
               Cancelar
             </a>
 
-            <app-button>
+            <button class="button-primary">
               Adicionar
-            </app-button>
+            </button>
           </div>
         </div>
 
         <div class="mt-6 pb-6 flex items-center space-x-4 border-b border-gray-300">
           <div>
-            <app-form-label>Descrição</app-form-label>
-            <app-form-input />
+            <label class="form-label">Descrição</label>
+            <input class="form-input" />
           </div>
 
           <div>
-            <app-form-label>Categoria</app-form-label>
-            <app-form-select :options="[{ name: 'Licença de softwares', id: 1 }]" />
+            <label class="form-label">Categoria</label>
+            <form-select :options="[{ name: 'Licença de softwares', id: 1 }]" />
           </div>
         </div>
 
@@ -142,23 +142,23 @@
                   <div class="my-4 mt-10 space-y-4">
                     <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-5">
                       <div>
-                        <app-form-label>Data da transação</app-form-label>
-                        <app-form-input type="date" />
+                        <label class="form-label">Data da transação</label>
+                        <input class="form-input" type="date" />
                       </div>
 
                       <div>
-                        <app-form-label>Valor</app-form-label>
-                        <app-form-input type="number" />
+                        <label class="form-label">Valor</label>
+                        <input class="form-input" type="number" />
                       </div>
 
                       <div>
-                        <app-form-label>Descrição</app-form-label>
-                        <app-form-input />
+                        <label class="form-label">Descrição</label>
+                        <input class="form-input" />
                       </div>
 
                       <div>
-                        <app-form-label>Categoria</app-form-label>
-                        <app-form-select :options="[{ name: 'Licença de softwares', id: 1 }]" />
+                        <label class="form-label">Categoria</label>
+                        <form-select :options="[{ name: 'Licença de softwares', id: 1 }]" />
                       </div>
                     </div>
 
@@ -167,9 +167,9 @@
                         Cancelar
                       </a>
 
-                      <app-button>
+                      <button class="button-primary">
                         Editar
-                      </app-button>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -283,18 +283,12 @@
 </template>
 
 <script>
-import AppButton from '../components/ui/app-button.vue';
-import AppFormInput from '../components/ui/app-form-input.vue';
-import AppFormLabel from '../components/ui/app-form-label.vue';
-import AppFormSelect from '~/components/ui/app-form-select.vue';
+import FormSelect from '~/components/ui/form-select.vue';
 
 export default {
   name: 'DashboardPage',
   components: {
-    AppButton,
-    AppFormInput,
-    AppFormLabel,
-    AppFormSelect,
+    FormSelect,
   },
   middleware: 'auth',
   data() {

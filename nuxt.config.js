@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'codigo-escola-auth',
+    title: 'finanças one',
     htmlAttrs: {
       lang: 'en',
     },

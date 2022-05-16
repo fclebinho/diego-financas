@@ -3,7 +3,7 @@
     <div class="flex items-center justify-center p-8">
       <a href="https://flowbite.com" class="flex flex-col space-y-4">
          <img class="block h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
-         <span class="self-center text-2xl whitespace-nowrap text-gray-600 dark:text-white">finanças</span>
+         <span class="self-center text-2xl whitespace-nowrap text-gray-600 dark:text-white">finanças one</span>
       </a>
     </div>
     <form class="space-y-4 pb-10" @submit.prevent="userLogin">

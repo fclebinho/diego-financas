@@ -4,25 +4,9 @@
 
     <div class="max-w-7xl mx-auto p-4">
       <div class="mt-4">
-        <div class="flex items-center justify-between">
-          <h1 class="font-bold text-2xl">
-            Categorias
-          </h1>
-        </div>
+        <header-categories />
 
         <div class="mt-6">
-          <div>
-            <div class="flex items-center space-x-3">
-              <div>
-                <form-input />
-              </div>
-
-              <custom-button>
-                Adicionar
-              </custom-button>
-            </div>
-          </div>
-
           <table class="mt-4 min-w-full divide-y divide-gray-200 shadow">
             <thead class="bg-gray-50">
             <tr>
@@ -92,14 +76,14 @@
 
 <script>
 import AppHeader from '~/components/app/header.vue';
-import CustomButton from '~/components/ui/custom-button.vue';
+import HeaderCategories from '~/components/categories/header.vue';
 import FormInput from '~/components/ui/form-input.vue';
 
 export default {
   name: 'CategoriesPage',
   components: {
     AppHeader,
-    CustomButton,
+    HeaderCategories,
     FormInput,
   },
   middleware: 'auth',

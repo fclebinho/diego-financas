@@ -51,6 +51,7 @@ export default {
   auth: {
     redirect: {
       callback: "/callback",
+      login: "/dashboard",
       logout: "/signed-out"
     },
     strategies: {

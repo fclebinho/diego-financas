@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-200 fixed inset-0 flex content-center">
-    <nuxt class="bg-white m-auto p-10 space-y-6 border rounded shadow-md" />
+    <nuxt class="bg-white m-auto p-10 space-y-6 border rounded-xl shadow-md" />
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   }
 
   .form-label {
-    @apply block mb-1 text-sm font-medium text-gray-900
+    @apply block mb-1 text-sm text-gray-500
   }
 
   .form-input {

@@ -29,6 +29,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://auth.nuxtjs.org/guide/setup/
+    '@nuxtjs/auth-next',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -45,4 +47,26 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: {
+            url: 'identity/login',
+            method: 'post',
+            propertyName: 'token',
+          },
+          user: {
+            url: 'financeiro',
+            method: 'get',
+            propertyName: null,
+          }
+        },
+      },
+    },
+    redirect: {
+      home: '/'
+    }
+  },
 }

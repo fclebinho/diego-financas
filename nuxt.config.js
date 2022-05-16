@@ -68,8 +68,8 @@ export default {
           // type: 'Bearer'
         },
         user: {
-          property: 'user',
-          autoFetch: false
+          property: false,
+          autoFetch: true
         },
         endpoints: {
           login: { url: 'identity/login', method: 'post' },
@@ -77,6 +77,7 @@ export default {
           user: false
         },
       },
-    }
+    },
+    watchLoggedIn: true,
   },
 }

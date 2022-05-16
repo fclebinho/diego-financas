@@ -296,6 +296,7 @@ export default {
     AppFormLabel,
     AppFormSelect,
   },
+  middleware: 'auth',
   data() {
     return {
     }

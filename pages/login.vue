@@ -34,13 +34,15 @@ export default {
     }
   },
   methods: {
-    async userLogin() {
-      try {
-        const response = await this.$auth.loginWith('local', { data: this.form })
-        console.log(response)
-      } catch (err) {
-        console.log(err)
-      }
+     userLogin({ redirect }) {
+      this.$auth.loginWith('local', { data: this.form })
+        .then((response) => {
+          this.$router.push('dashboard');
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     }
   }
 }

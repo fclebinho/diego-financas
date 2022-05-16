@@ -9,7 +9,8 @@
 
 <script>
 export default {
-  name: 'CallbackPage'
+  name: 'CallbackPage',
+  auth: false,
 }
 </script>
 

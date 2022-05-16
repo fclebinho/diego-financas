@@ -24,6 +24,7 @@
 export default {
   name: 'LoginPage',
   layout: 'centralized',
+  auth: false,
   data() {
     return {
       form: {

@@ -29,14 +29,14 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    // https://auth.nuxtjs.org/guide/setup/
-    '@nuxtjs/auth-next',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://auth.nuxtjs.org/guide/setup/
+    '@nuxtjs/auth-next',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -48,11 +48,16 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  router: {
+    middleware: ['auth']
+  },
+
   auth: {
     redirect: {
-      callback: "/callback",
-      login: "/dashboard",
-      logout: "/signed-out"
+      callback: "/login",
+      logout: "/",
+      home: "/dashboard",
+      login: "/login"
     },
     strategies: {
       local: {

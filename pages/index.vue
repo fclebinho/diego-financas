@@ -7,6 +7,7 @@
 <script>
 export default {
   name: 'IndexPage',
+  auth: false,
   components: {},
   data() {
     return {

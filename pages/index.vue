@@ -4,7 +4,7 @@
 
     <br />
 
-    <nuxt-link to="/dashboard">Login</nuxt-link>
+    <nuxt-link to="/transactions">Login</nuxt-link>
   </div>
 </template>
 

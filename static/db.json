@@ -1,0 +1,44 @@
+{
+  "financeiro": [
+    {
+      "valorProgramado": 4999,
+      "valorRealizado": 0,
+      "dataVencimento": "2022-05-16T19:08:05.662Z",
+      "dataEfetivacao": "2022-05-16T19:08:05.662Z",
+      "tipo": 3,
+      "descricao": "Mac mini M1 512 8"
+    },
+    {
+      "valorProgramado": 4999,
+      "valorRealizado": 0,
+      "dataVencimento": "2022-05-16T19:08:05.662Z",
+      "dataEfetivacao": "2022-05-16T19:08:05.662Z",
+      "tipo": 3,
+      "descricao": "Mac mini M1 512 8"
+    },
+    {
+      "valorProgramado": 4999,
+      "valorRealizado": 0,
+      "dataVencimento": "2022-05-10T19:08:05.662Z",
+      "dataEfetivacao": "2022-05-16T19:08:05.662Z",
+      "tipo": 3,
+      "descricao": "Mac mini M1 512 8"
+    },
+    {
+      "valorProgramado": 4999,
+      "valorRealizado": 0,
+      "dataVencimento": "2022-05-10T19:08:05.662Z",
+      "dataEfetivacao": "2022-05-16T19:08:05.662Z",
+      "tipo": 3,
+      "descricao": "Mac mini M1 512 8"
+    },
+    {
+      "valorProgramado": 4999,
+      "valorRealizado": 0,
+      "dataVencimento": "2022-05-10T19:08:05.662Z",
+      "dataEfetivacao": "2022-05-16T19:08:05.662Z",
+      "tipo": 3,
+      "descricao": "Mac mini M1 512 8"
+    }
+  ]
+}

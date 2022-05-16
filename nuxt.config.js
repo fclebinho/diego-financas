@@ -18,7 +18,9 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    '@/plugins/dayjs',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -49,7 +51,8 @@ export default {
   build: {},
 
   router: {
-    middleware: ['auth']
+    middleware: ['auth'],
+    linkExactActiveClass: "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
   },
 
   auth: {

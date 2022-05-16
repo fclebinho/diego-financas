@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'AppFormInput',
+  name: 'FormInput',
   props: {
     value: {
       type: [String, Number],

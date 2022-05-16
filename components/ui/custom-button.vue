@@ -8,12 +8,12 @@
 </template>
 
 <script>
-export default {
-    name: 'AppButton',
-    data() {
-        return {
-        };
-    },
-    methods: {},
-};
+    export default {
+        name: 'CustomButton',
+        data() {
+            return {
+            };
+        },
+        methods: {},
+    };
 </script>

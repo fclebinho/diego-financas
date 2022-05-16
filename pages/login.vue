@@ -6,17 +6,17 @@
          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">finanças</span>
       </a>
     </div>
-    <div class="space-y-4 pb-10">
-      <div>
+    <form class="space-y-4 pb-10" @submit.prevent="userLogin">
+      <fieldset>
         <label class="form-label">Username</label>
         <input v-model="form.email" type="text" class="form-input" />
-      </div>
-      <div>
+      </fieldset>
+      <fieldset>
         <label class="form-label">Password</label>
         <input v-model="form.password" type="password" class="form-input" />
-      </div>
-      <button to="/" class="button-primary w-full" @click="login" >Entrar</button>
-    </div>
+      </fieldset>
+      <button type="submit" class="button-primary w-full" >Entrar</button>
+    </form>
   </div>
 </template>
 
@@ -33,10 +33,13 @@ export default {
     }
   },
   methods: {
-    login() {
-      this.$auth.loginWith('local', { data: this.form })
-        .then(() => console.log("Sucesso!"))
-        .catch((error) => console.error("Erro!", error));
+    async userLogin() {
+      try {
+        const response = await this.$auth.loginWith('local', { data: this.form })
+        console.log(response)
+      } catch (err) {
+        console.log(err)
+      }
     }
   }
 }

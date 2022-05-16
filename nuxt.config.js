@@ -49,6 +49,10 @@ export default {
   build: {},
 
   auth: {
+    redirect: {
+      callback: "/callback",
+      logout: "/signed-out"
+    },
     strategies: {
       local: {
         token: {
@@ -67,9 +71,6 @@ export default {
           user: false
         },
       },
-    },
-    redirect: {
-      home: '/'
     }
   },
 }

@@ -39,7 +39,35 @@ export default {
     '@nuxtjs/axios',
     // https://auth.nuxtjs.org/guide/setup/
     '@nuxtjs/auth-next',
+    // https://i18n.nuxtjs.org/setup
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: true
+    },
+    locales: ['en', 'pt'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          welcome: 'Welcome',
+          get_started: "Get started",
+          transactions: "Transactions",
+          categories: "Categories",
+        },
+        pt: {
+          welcome: 'Bem vindo',
+          get_started: "Vamos lá",
+          transactions: "Transações",
+          categories: "Categorias",
+        },
+      }
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

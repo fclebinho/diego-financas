@@ -2,7 +2,7 @@
   <div>
     <div class="flex items-center justify-between">
       <h1 class="font-middle text-gray-600 text-2xl">
-        Transactions
+        {{ $t('transactions') }}
       </h1>
 
       <custom-button @click="isCreating = !isCreating">

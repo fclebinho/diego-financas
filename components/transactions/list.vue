@@ -58,7 +58,7 @@ export default {
     }
   },
   mounted() {
-    this.$store.dispatch('transactions/fetchAll', {});
+    this.$store.dispatch('transactions/fetchAll', {"TiposFinanceiros": 3});
   },
   methods: {
     formatDate(date, format = 'DD [de] MMM') {

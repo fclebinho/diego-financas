@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-200 fixed inset-0 flex content-center">
+  <div class="fixed inset-0 flex content-center">
     <div class="bg-white m-auto p-10 space-y-6 border rounded-xl shadow-md">
       <div class="flex items-center justify-center w-64 p-8">
-        <a href="https://flowbite.com" class="flex flex-col space-y-4">
+        <a href="https://flowbite.com" class="flex flex-row space-x-2">
           <img class="block h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
           <span class="self-center text-2xl whitespace-nowrap text-gray-600 dark:text-white">finanças one</span>
         </a>

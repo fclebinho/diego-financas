@@ -46,24 +46,35 @@ export default {
   i18n: {
     detectBrowserLanguage: {
       useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
       alwaysRedirect: true
     },
-    locales: ['en', 'pt'],
+    locales: ['en', 'pt-BR'],
+    strategy: 'prefix_except_default',
     defaultLocale: 'en',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: 'pt-BR',
       messages: {
         en: {
           welcome: 'Welcome',
           get_started: "Get started",
           transactions: "Transactions",
           categories: "Categories",
+          email: 'E-mail',
+          username: 'User name',
+          password: 'Password',
+          login: 'Log in'
         },
-        pt: {
+        'pt-BR': {
           welcome: 'Bem vindo',
           get_started: "Vamos lá",
           transactions: "Transações",
           categories: "Categorias",
+          email: 'E-mail',
+          username: 'Usuário',
+          password: 'Senha',
+          login: 'Entrar',
         },
       }
     }
@@ -94,9 +105,15 @@ export default {
       local: {
         token: {
           property: 'accessToken',
+          maxAge: 1800,
           global: true,
           // required: true,
           // type: 'Bearer'
+        },
+        refreshToken: {
+          property: 'refreshToken',
+          data: 'refreshToken',
+          maxAge: 60 * 60 * 24 * 30
         },
         user: {
           property: false,
@@ -104,6 +121,7 @@ export default {
         },
         endpoints: {
           login: { url: 'identity/login', method: 'post' },
+          refresh: { url: '/api/auth/refresh-token', method: 'post' },
           logout: { url: 'identity/logout', method: 'post' },
           user: false
         },

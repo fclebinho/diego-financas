@@ -11,9 +11,9 @@
             <div class="hidden sm:block sm:ml-6">
               <div class="flex space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <nuxt-link to="/transactions" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ $t('transactions') }}</nuxt-link>
+                <nuxt-link :to="localePath({name: 'transactions'})" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ $t('transactions') }}</nuxt-link>
 
-                <nuxt-link to="/categories" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ $t('categories') }}</nuxt-link>
+                <nuxt-link :to="localePath({name: 'categories'})" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ $t('categories') }}</nuxt-link>
               </div>
             </div>
           </div>

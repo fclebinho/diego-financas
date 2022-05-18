@@ -50,34 +50,19 @@ export default {
       redirectOn: 'root',
       alwaysRedirect: true
     },
-    locales: ['en', 'pt-BR'],
-    strategy: 'prefix_except_default',
-    defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'pt-BR',
-      messages: {
-        en: {
-          welcome: 'Welcome',
-          get_started: "Get started",
-          transactions: "Transactions",
-          categories: "Categories",
-          email: 'E-mail',
-          username: 'User name',
-          password: 'Password',
-          login: 'Log in'
-        },
-        'pt-BR': {
-          welcome: 'Bem vindo',
-          get_started: "Vamos lá",
-          transactions: "Transações",
-          categories: "Categorias",
-          email: 'E-mail',
-          username: 'Usuário',
-          password: 'Senha',
-          login: 'Entrar',
-        },
+    locales: [
+      {
+        code: 'en',
+        file: 'en.js'
+      },
+      {
+        code: 'pt-BR',
+        file: 'pt-BR.js'
       }
-    }
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    strategy: 'prefix_except_default',
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

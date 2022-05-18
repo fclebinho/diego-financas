@@ -2,12 +2,12 @@
   <div>
     <div class="mt-6 pb-6 flex items-center space-x-4 border-b border-gray-300">
       <div>
-        <form-label>Description</form-label>
+        <form-label>{{ $t('global.description') }}</form-label>
         <form-input />
       </div>
 
       <div>
-        <form-label>Category</form-label>
+        <form-label>{{ $t('global.category') }}</form-label>
         <form-select :options="[{ name: 'Licença de softwares', id: 1 }]" />
       </div>
     </div>

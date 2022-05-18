@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import 'dayjs/locale/pt-BR';
+import 'dayjs/locale/pt-br';
 import 'dayjs/locale/en';
 
 export default (context, inject) => {
